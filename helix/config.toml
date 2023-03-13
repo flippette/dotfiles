@@ -1,4 +1,4 @@
-theme = "gruvbox_material"
+theme = "rose_pine"
 
 [editor]
 scrolloff = 8
@@ -16,9 +16,6 @@ right = ["spinner", "spacer", "diagnostics", "file-encoding", "file-line-ending"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
-
-[editor.lsp]
-display-messages = true
 
 [editor.cursor-shape]
 normal = "block"

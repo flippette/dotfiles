@@ -1,0 +1,26 @@
+# set PATH
+set -gx PATH $(xdg-user-dir DOCUMENTS)/scripts:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+
+if status is-interactive    
+    # show sysfetch
+    pfetch
+    
+    # pure prompt settings
+    set -g pure_enable_single_line_prompt true
+    set -g pure_show_subsecond_command_duration true
+    set -g pure_show_jobs true
+    
+    # pure async git prompt
+    set -g async_prompt_functions _pure_prompt_git
+
+    # exported env vars
+    set -xg EDITOR hx
+    
+    # aliases
+    alias ls "exa --icons"
+    alias tree "ls -T"
+    alias ll "ls -l"
+    alias la "ls -a"
+    alias du "dust"
+    alias cat "bat"
+end
