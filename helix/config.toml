@@ -27,3 +27,13 @@ hidden = false
 
 [editor.indent-guides]
 render = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+auto-signature-help = false
+display-inlay-hints = true
+
+[keys.insert]
+C-space = "signature_help"
