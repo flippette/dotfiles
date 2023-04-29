@@ -205,10 +205,10 @@ exec_always --no-startup-id feh --bg-scale $(xdg-user-dir PICTURES)/wallpapers/l
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Enable gaps
-gaps inner 6
-gaps horizontal -1
-gaps top -6
-gaps bottom 0
+gaps inner 4
+gaps horizontal 1
+gaps top -5
+gaps bottom 1
 
 # Hide titlebars
 default_border pixel 2

@@ -18,9 +18,10 @@ if status is-interactive
     
     # aliases
     alias ls "exa --icons"
-    alias tree "ls -T"
+    alias tree "erd -I"
     alias ll "ls -l"
     alias la "ls -a"
     alias du "dust"
     alias cat "bat"
+    alias rm 'echo "Consider using trash!"; false'
 end
