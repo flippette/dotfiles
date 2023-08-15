@@ -1,5 +1,5 @@
 # set PATH
-set -gx PATH $(xdg-user-dir DOCUMENTS)/scripts:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+set -gx PATH $(xdg-user-dir DOCUMENTS)/scripts:$HOME/.local/bin:$HOME/.cargo/bin:/opt/resolve/bin:$PATH
 
 if status is-interactive    
     # show sysfetch
@@ -14,7 +14,8 @@ if status is-interactive
     set -g async_prompt_functions _pure_prompt_git
 
     # exported env vars
-    set -xg EDITOR hx
+    set -gx EDITOR hx
+    set -gx FZF_DEFAULT_COMMAND 'fd -H -t f'
     
     # aliases
     alias ls "exa --icons"

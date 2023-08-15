@@ -9,13 +9,31 @@ idle-timeout = 200
 completion-trigger-len = 1
 bufferline = "multiple"
 color-modes = true
+true-color = true
 
 [editor.statusline]
-left = ["mode", "spacer", "file-type", "file-name"]
-right = ["spinner", "spacer", "diagnostics", "file-encoding", "file-line-ending", "selections", "position"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+left = [
+  "mode",
+  "spacer",
+  "file-type",
+  "file-name",
+  "spacer",
+  "version-control",
+]
+right = [
+  "spinner",
+  "spacer",
+  "file-modification-indicator",
+  "spacer",
+  "diagnostics",
+  "file-encoding",
+  "file-line-ending",
+  "selections",
+  "position",
+]
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
 
 [editor.cursor-shape]
 normal = "block"
@@ -23,17 +41,26 @@ insert = "block"
 select = "block"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.indent-guides]
 render = true
+
+[editor.gutters]
+line-numbers.min-width = 1
 
 [editor.soft-wrap]
 enable = true
 
 [editor.lsp]
-auto-signature-help = false
+display-messages = true
 display-inlay-hints = true
 
+[keys.normal]
+C-i = ":toggle lsp.display-inlay-hints"
+
 [keys.insert]
-C-space = "signature_help"
+C-i = ":toggle lsp.display-inlay-hints"
+
+[keys.select]
+C-i = ":toggle lsp.display-inlay-hints"

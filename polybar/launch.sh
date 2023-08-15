@@ -4,4 +4,5 @@
 killall -q polybar
 
 # Launch polybar with default config location
-polybar default 2>&1 | tee -a /tmp/polybar.log & disown
+polybar stat 2>&1 | tee -a /tmp/polybar-stat.log & disown
+polybar workspaces 2>&1 | tee -a /tmp/polybar-workspaces.log & disown
