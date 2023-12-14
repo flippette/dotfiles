@@ -2,6 +2,6 @@
 
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
-for item in $(ls -a); do
-  ln -s "$item" "$XDG_CONFIG_HOME/$(basename $item)"
+for item in $(ls -a | rg -v '\.(\.?)'); do
+  ln -s "$(realpath $item)" "$XDG_CONFIG_HOME/$(basename $item)"
 done
