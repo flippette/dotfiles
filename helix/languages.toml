@@ -1,5 +1,15 @@
 [[language]]
 name = "rust"
 
-[language.config]
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+'|' = '|'
+
+[language-server.rust-analyzer.config]
 check.command = "clippy"
+check.allTargets = false

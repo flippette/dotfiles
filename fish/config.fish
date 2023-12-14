@@ -1,28 +1,21 @@
-# set PATH
-set -gx PATH $(xdg-user-dir DOCUMENTS)/scripts:$HOME/.local/bin:$HOME/.cargo/bin:/opt/resolve/bin:$PATH
+set -g fish_greeting
 
-if status is-interactive    
-    # show sysfetch
+if status is-login
+    set -gx PATH "$HOME/documents/scripts:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+    sudo amdgpu-oc
+end
+
+set -gx EDITOR hx
+set -gx VISUAL hx
+
+if status is-interactive
     pfetch
-    
-    # pure prompt settings
-    set -g pure_enable_single_line_prompt true
-    set -g pure_show_subsecond_command_duration true
-    set -g pure_show_jobs true
-    
-    # pure async git prompt
-    set -g async_prompt_functions _pure_prompt_git
+    starship init fish | source
 
-    # exported env vars
-    set -gx EDITOR hx
-    set -gx FZF_DEFAULT_COMMAND 'fd -H -t f'
-    
     # aliases
-    alias ls "exa --icons"
-    alias tree "erd -I"
-    alias ll "ls -l"
-    alias la "ls -a"
-    alias du "dust"
+    alias ls  "exa --icons=auto"
+    alias ll  "ls -l"
     alias cat "bat"
-    alias rm 'echo "Consider using trash!"; false'
+    alias du  "dust"
+    alias rm  "echo use trash instead!"
 end

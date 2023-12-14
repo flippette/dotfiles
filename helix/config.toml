@@ -1,66 +1,58 @@
-theme = "rose_pine"
+theme = "catppuccin_mocha_transparent"
 
 [editor]
 scrolloff = 8
-scroll-lines = 5
 line-number = "relative"
-cursorline = true
+gutters = [
+  "diagnostics",
+  "spacer",
+  "line-numbers",
+  "spacer",
+  "diff",
+]
 idle-timeout = 200
 completion-trigger-len = 1
+completion-replace = true
+true-color = true
 bufferline = "multiple"
 color-modes = true
-true-color = true
 
 [editor.statusline]
 left = [
   "mode",
   "spacer",
-  "file-type",
   "file-name",
-  "spacer",
   "version-control",
+]
+center = [
+  "read-only-indicator",
 ]
 right = [
   "spinner",
   "spacer",
-  "file-modification-indicator",
-  "spacer",
   "diagnostics",
+  "position",
   "file-encoding",
   "file-line-ending",
-  "selections",
-  "position",
+  "file-type",
 ]
-mode.normal = "normal"
-mode.insert = "insert"
-mode.select = "select"
 
-[editor.cursor-shape]
-normal = "block"
-insert = "block"
-select = "block"
+[editor.lsp]
+display-messages = true
+
+[editor.lsp.inline-diagnostics]
+cursor-line = ["hint", "info", "warning", "error"]
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [editor.indent-guides]
 render = true
 
-[editor.gutters]
-line-numbers.min-width = 1
-
-[editor.soft-wrap]
-enable = true
-
-[editor.lsp]
-display-messages = true
-display-inlay-hints = true
+[editor.smart-tab]
+enable = false
 
 [keys.normal]
-C-i = ":toggle lsp.display-inlay-hints"
-
-[keys.insert]
-C-i = ":toggle lsp.display-inlay-hints"
-
-[keys.select]
-C-i = ":toggle lsp.display-inlay-hints"
+"C-i" = ":toggle lsp.display-inlay-hints"
+"C-:" = ":vsplit"
+"C-\"" = ":hsplit"
