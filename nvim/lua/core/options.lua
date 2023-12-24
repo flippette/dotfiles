@@ -9,6 +9,7 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = 'yes'
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.opt.guicursor = 'i:block'
 
 -- tab width
 vim.opt.tabstop = 4
