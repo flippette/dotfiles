@@ -2,6 +2,4 @@
 
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
-for item in $(ls -a | rg -v '\.(\.?)'); do
-  ln -s "$(realpath $item)" "$XDG_CONFIG_HOME/$(basename $item)"
-done
+ln -s -t "$XDG_CONFIG_HOME" $(find . -maxdepth 1 -type d ! -name '.*' | cut -c3-)
