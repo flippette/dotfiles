@@ -21,6 +21,9 @@ local config = {
 
 -- setup lazy.nvim with plugin specs in /lua/plugins/
 require('lazy').setup(
-  {{ import = "plugins" }},
+  { { import = "plugins" } },
   config
 )
+
+-- autoupdate plugins
+require('lazy').sync()

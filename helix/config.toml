@@ -3,6 +3,7 @@ theme = "catppuccin_mocha"
 [editor]
 scrolloff = 8
 line-number = "relative"
+cursorline = true
 gutters = [
   "diagnostics",
   "spacer",
@@ -14,6 +15,7 @@ idle-timeout = 200
 completion-trigger-len = 1
 completion-replace = true
 true-color = true
+rulers = [80]
 bufferline = "multiple"
 color-modes = true
 
@@ -40,8 +42,6 @@ right = [
 [editor.lsp]
 display-messages = true
 
-# [editor.lsp.inline-diagnostics]
-
 [editor.file-picker]
 hidden = false
 
@@ -49,9 +49,4 @@ hidden = false
 render = true
 
 [editor.smart-tab]
-enable = false
-
-[keys.normal]
-"C-i" = ":toggle lsp.display-inlay-hints"
-"C-:" = ":vsplit"
-"C-\"" = ":hsplit"
+enable = true
