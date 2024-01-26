@@ -1,11 +1,13 @@
 {
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "spacing": 0,
   "height": 30,
   "modules-left": [
     "hyprland/workspaces",
-    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/window",
   ],
   "modules-right": [
     "wireplumber",
@@ -19,23 +21,23 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%H:%M:%S %d-%m-%Y}",
+    "format": "{:%H:%M %d-%m}",
     "interval": 1
   },
   "cpu": {
     "format": "cpu {usage}%",
     "tooltip": false,
-    "interval": 2
+    "interval": 1
   },
   "memory": {
     "format": "mem {}%",
-    "interval": 2
+    "interval": 1
   },
   "network": {
-    "format-ethernet": "eth {ipaddr}/{cidr}",
-    "tooltip-format": "{ifname} via {gwaddr}",
-    "format-linked": "{ifname} (no ip)",
-    "format-disconnected": "eth disconnected"
+    "format-ethernet": "net up",
+    "tooltip-format": "{ifname} on {ipaddr} via {gwaddr}",
+    "format-linked": "net ln",
+    "format-disconnected": "net dn"
   },
   "wireplumber": {
     "format": "vol {volume}%",
