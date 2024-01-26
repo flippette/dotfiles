@@ -1,1 +1,2 @@
 /helix/helix/runtime/grammars/*.so
+/helix/helix/runtime/grammars/sources/**/*
