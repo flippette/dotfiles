@@ -7,4 +7,5 @@ My config files.
 ```sh
   stow -R */ -t $XDG_CONFIG_HOME
   hx -g fetch && hx -g build # helix, optional
+  bat cache --build # bat, optional
 ```
