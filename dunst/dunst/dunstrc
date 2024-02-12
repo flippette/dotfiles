@@ -1,0 +1,31 @@
+[global]
+origin = top-right
+offset = 10x10
+frame_width = 3
+frame_color = "#aaaaaa"
+sort = yes
+font = Monospace 12
+alignment = right
+
+[experimental]
+per_monitor_dpi = false
+
+[urgency_low]
+background = "#222222"
+foreground = "#888888"
+timeout = 10
+
+[urgency_normal]
+background = "#285577"
+foreground = "#ffffff"
+timeout = 10
+
+[urgency_critical]
+background = "#900000"
+foreground = "#ffffff"
+frame_color = "#ff0000"
+timeout = 0
+
+icon_position = off
+
+# vim: ft=cfg
