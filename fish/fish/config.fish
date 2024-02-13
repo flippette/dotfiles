@@ -4,6 +4,9 @@ if status is-login
     set -gx PATH "$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 end
 
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+
 if status is-interactive
     pfetch
     starship init fish | source
