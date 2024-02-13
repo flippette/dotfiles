@@ -46,7 +46,11 @@ vim.o.termguicolors = true
 vim.o.scrolloff = 4
 
 -- shorten update time
-vim.o.updatetime = 50
+vim.o.updatetime = 250
+
+-- shorten timeout
+vim.o.timeout = true
+vim.o.timeoutlen = 250
 
 -- draw 80-column ruler
 vim.o.colorcolumn = "80"
