@@ -5,5 +5,9 @@ return {
   init = function(_)
     vim.cmd.colorscheme("catppuccin")
   end,
-  opts = {},
+  opts = {
+    integrations = {
+      which_key = true,
+    },
+  },
 }
