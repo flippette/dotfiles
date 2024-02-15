@@ -13,11 +13,15 @@ return {
     local cmp = require("cmp")
 
     lsp_zero.on_attach(function(_, bufnr)
-      lsp_zero.default_keymaps({ buffer = bufnr })
+      lsp_zero.default_keymaps({
+        buffer = bufnr,
+        preserve_mappings = false,
+      })
       lsp_zero.buffer_autoformat()
     end)
 
     lspconfig.lua_ls.setup({})
+    lspconfig.clangd.setup({})
     lspconfig.rust_analyzer.setup({
       settings = {
         ["rust-analyzer"] = {
@@ -30,7 +34,7 @@ return {
 
     cmp.setup({
       mapping = {
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
       },
     })
   end,

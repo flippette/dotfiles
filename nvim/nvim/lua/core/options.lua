@@ -19,15 +19,14 @@ vim.o.shiftwidth = 0
 vim.o.expandtab = true
 vim.o.smartindent = true
 
--- line wrapping defaults
-vim.o.wrap = true
-vim.o.breakindent = true
+-- disable line wrapping
+vim.o.wrap = false
 
 -- enable the signcolumn
 vim.wo.signcolumn = "yes"
 
 -- better completion
-vim.o.completeopt = "menuone,noselect"
+vim.o.completeopt = "menu,menuone"
 
 -- better search
 vim.o.hlsearch = false
