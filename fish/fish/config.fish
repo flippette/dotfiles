@@ -11,7 +11,7 @@ if status is-interactive
     pfetch
     starship init fish | source
 
-    alias ls   "exa --icons=auto"
+    alias ls   "eza --icons=auto"
     alias ll   "ls -l"
     alias cat  "bat"
     alias du   "dust"
