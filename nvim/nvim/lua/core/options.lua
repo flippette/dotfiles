@@ -53,3 +53,6 @@ vim.o.timeoutlen = 250
 
 -- draw 80-column ruler
 vim.o.colorcolumn = "80"
+
+-- hide netrw banner
+vim.g.netrw_banner = 0
