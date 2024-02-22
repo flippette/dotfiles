@@ -22,11 +22,18 @@ return {
 
     lspconfig.lua_ls.setup({})
     lspconfig.clangd.setup({})
+    lspconfig.tailwindcss.setup({})
     lspconfig.rust_analyzer.setup({
       settings = {
         ["rust-analyzer"] = {
           check = {
             command = "clippy",
+            extraArgs = {
+              "--",
+              "-W",
+              "clippy::pedantic",
+            },
+            allTargets = false,
           },
         },
       },
