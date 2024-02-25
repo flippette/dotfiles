@@ -14,9 +14,14 @@ return {
           help = { icon = "?" },
         },
       },
-      popupmenu = { enabled = false },
-      hover = { enabled = false },
-      signature = { enabled = false },
+      lsp = {
+        hover = { enabled = false },
+        signature = { enabled = false },
+      },
     },
-  }
+  },
+  {
+    "stevearc/dressing.nvim",
+    opts = {},
+  },
 }
