@@ -5,8 +5,15 @@ return {
       { "MunifTanjim/nui.nvim" },
     },
     opts = {
-      cmdline = { enabled = false },
-      messages = { enabled = false },
+      cmdline = {
+        format = {
+          cmdline = { icon = ">" },
+          search_down = { icon = "↓" },
+          search_up = { icon = "↑" },
+          lua = { icon = "L" },
+          help = { icon = "?" },
+        },
+      },
       popupmenu = { enabled = false },
       hover = { enabled = false },
       signature = { enabled = false },
