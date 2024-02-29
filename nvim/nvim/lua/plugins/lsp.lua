@@ -25,10 +25,11 @@ return {
     require("mason").setup({})
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "lua_ls",
         "clangd",
-        "tailwindcss",
+        "lua_ls",
+        "marksman",
         "rust_analyzer",
+        "tailwindcss",
       },
       handlers = {
         lsp_zero.default_handler,
