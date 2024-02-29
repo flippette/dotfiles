@@ -32,7 +32,7 @@ return {
         "tailwindcss",
       },
       handlers = {
-        lsp_zero.default_handler,
+        lsp_zero.default_setup,
         tailwindcss = function()
           lspconfig.tailwindcss.setup({
             userLanguages = {
