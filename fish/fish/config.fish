@@ -1,7 +1,16 @@
 set -g fish_greeting
 
 if status is-login
-    set -gx PATH "$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+    # prepends a path to $PATH if it exists
+    function add_path -a path
+        if path is $path
+            set -gx PATH "$path:$PATH"
+        end
+    end
+
+    add_path $HOME/.local/bin
+    add_path $HOME/.cargo/bin
+    add_path /opt/resolve/bin
 end
 
 set -gx EDITOR nvim
