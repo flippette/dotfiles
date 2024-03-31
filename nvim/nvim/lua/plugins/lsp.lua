@@ -31,6 +31,7 @@ return {
 				"rust_analyzer",
 				"tailwindcss",
 				"tsserver",
+				"wgsl_analyzer",
 			},
 			handlers = {
 				lsp_zero.default_setup,
