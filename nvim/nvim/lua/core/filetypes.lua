@@ -1,5 +1,6 @@
 vim.filetype.add({
-	extension = {
-		wgsl = "wgsl",
-	},
+  extension = {
+    pest = "pest",
+    wgsl = "wgsl",
+  },
 })
