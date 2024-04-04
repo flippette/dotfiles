@@ -21,6 +21,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "143ca5ce17ae21233101246b5785b90d53aa8329" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "d2a4ffc22d9d38d44edb73da007b3cf43451e9b4" },
   "nvim-ufo": { "branch": "main", "commit": "2296dbb8939c4050c222f4eb24889540ef8acd76" },
+  "pest.vim": { "branch": "master", "commit": "78a65344a89804ec86a0d025a3799f47c2331389" },
   "plenary.nvim": { "branch": "master", "commit": "f7adfc4b3f4f91aab6caebf42b3682945fbc35be" },
   "promise-async": { "branch": "main", "commit": "93540c168c5ed2b030ec3e6c40ab8bbb85e36355" },
   "telescope-fzy-native.nvim": { "branch": "master", "commit": "282f069504515eec762ab6d6c89903377252bf5b" },

@@ -7,12 +7,12 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = "all",
-      highlight = {
-        enable = true,
-      },
-      indent = {
-        enable = true,
-      },
+
+      -- modules
+      highlight = { enable = true },
+      indent = { enable = true },
+      textobjects = { enable = true },
+      incremental_selection = { enable = true },
     })
   end,
 }
