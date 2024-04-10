@@ -41,6 +41,24 @@ return {
                   command = "clippy",
                   allTargets = false,
                 },
+                semanticHighlighting = {
+                  operator = {
+                    specialization = {
+                      enable = true,
+                    },
+                  },
+                  punctuation = {
+                    enable = true,
+                    separate = {
+                      macro = {
+                        bang = true,
+                      },
+                    },
+                    specialization = {
+                      enable = true,
+                    },
+                  },
+                },
               },
             },
           })
