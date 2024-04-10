@@ -24,16 +24,6 @@ return {
     end)
 
     require("mason-lspconfig").setup({
-      ensure_installed = {
-        "clangd",
-        "emmet_language_server",
-        "lua_ls",
-        "marksman",
-        "rust_analyzer",
-        "tailwindcss",
-        "tsserver",
-        "wgsl_analyzer",
-      },
       handlers = {
         lsp_zero.default_setup,
         tailwindcss = function()
