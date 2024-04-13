@@ -1,0 +1,50 @@
+# Useful Arch packages
+
+- `avahi`: mDNS provider (use in combination with `nss-mdns`).
+- `bat`: `cat` replacement.
+- `bemenu`: Wayland replacement for `dmenu`.
+- `bind`: Provides `dig`, a DNS lookup utility.
+- `btop`: `htop` replacement with eye-candy.
+- `chaotic-{keyring, mirrorlist}`: `chaotic-aur` packages.
+- `dex`: `.desktop` autostarter.
+- `dunst`: Notification daemon.
+- `dust`: `du` replacement.
+- `erdtree`: `tree` replacement.
+- `eza`: `ls` replacement.
+- `fcitx5`: An IME that actually works.
+- `fd`: `find` replacement.
+- `fish`: Friendly, Interactive SHell.
+- `foot`: Minimalist Wayland terminal.
+- `fwupd`: Easy firmware updates.
+- `gamemode`: Optimizations for games.
+- `glow`: TUI Markdown reader.
+- `grim`: Wayland screenshot utility.
+- `hyperfine`: Benchmarking utility.
+- `imagemagick`: `ffmpeg`, but for images.
+- `imv`: Wayland replacement for `feh`.
+- `miniserve`: Simple HTTP file server.
+- `moreutils`: Various handy utilities, notably `vidir`.
+- `mpv`: Minimalist media player.
+- `noisetorch`: Noise cancellation.
+- `nss-mdns`: mDNS provider (use in combination with `avahi`).
+- `nvtop`: Usage monitor for GPUs.
+- `nwg-look`: Theme configuration for GTK apps.
+- `oha`: HTTP stress testing tool.
+- `paru`: AUR helper.
+- `piper`: Peripheral configuration tool.
+- `progress`: Progress monitoring for `coreutils` tools.
+- `protonup-qt`: Proton version manager.
+- `qbittorrent`: Torrenting application.
+- `qt6ct`: Qt5/6 theme configuration tool.
+- `ripgrep`: `grep` replacement.
+- `starship`: Customizable shell prompt.
+- `stow`: Symlink manager.
+- `thunar`: Lightweight file manager.
+- `tinyxxd`: Standalone `xxd` replacement.
+- `tokei`: `cloc` replacement.
+- `ttf-ms-win11-auto`: Windows 11 fonts.
+- `ttf-twemoji`: Twitter's emoji font.
+- `ufw`: Simple firewall tool.
+- `waybar`: Wayland `polybar` replacement.
+- `wev`: Wayland `xev` replacement.
+- `yt-dlp`: CLI YouTube downloader.
