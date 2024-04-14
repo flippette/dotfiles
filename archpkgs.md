@@ -26,6 +26,7 @@
 - `moreutils`: Various handy utilities, notably `vidir`.
 - `mpv`: Minimalist media player.
 - `noisetorch`: Noise cancellation.
+- `nct6687d-dkms-git`: `lm-sensors` module for Zen 4 monitoring.
 - `nss-mdns`: mDNS provider (use in combination with `avahi`).
 - `nvtop`: Usage monitor for GPUs.
 - `nwg-look`: Theme configuration for GTK apps.
