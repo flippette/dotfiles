@@ -20,3 +20,7 @@ on the system:
 - `fish`: `nvim`, `starship`, `pfetch`, `eza`, `bat`, `dust`, `erd`
 - `hypr`: `Hyprland`, `hyprpaper`, `bemenu-run`
 - `nvim`: `fzy`, `tree-sitter`
+
+## Note
+
+I've moved to NixOS, and this repo will henceforth be unmaintained.
