@@ -1,5 +1,11 @@
 local wezterm = require("wezterm")
 
+-- maximize windows on startup
+wezterm.on("gui-startup", function(cmd)
+	local _, _, window = wezterm.mux.spawn_window(cmd or {})
+	window:gui_window():maximize()
+end)
+
 return {
 	color_scheme = "Catppuccin Mocha",
 
