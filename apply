@@ -9,6 +9,7 @@ cp -r \
   ./bat \
   ./btop \
   ./fish \
+  ./foot \
   ./hypr \
   ./MangoHud \
   ./mpv \
