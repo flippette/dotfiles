@@ -1,9 +1,9 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-[ -n $CARGO ] && shift
+[ -n "$CARGO" ] && shift
 
 cargo install \
   --profile _install \
-  --target $(rustc --print host-tuple) \
+  --target "$(rustc --print host-tuple)" \
   -Zbuild-std=std,panic_abort \
-  $@
+  "$@"
