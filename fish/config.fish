@@ -6,6 +6,10 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/coursier/bin
 
+# nix is optional on my systems for now :shrug:
+set nix "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
+test -e "$nix" && source "$nix"
+
 if status is-interactive
     if ! test -z $XDG_CURRENT_DESKTOP && test -z $TMUX
         if test $TMUX_ATTACH
