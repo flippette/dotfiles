@@ -11,13 +11,8 @@ set nix "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
 test -e "$nix" && source "$nix"
 
 if status is-interactive
-    if ! test -z $XDG_CURRENT_DESKTOP && test -z $TMUX
-        if test $TMUX_ATTACH
-            exec tmux new -As inf
-        else
-            exec tmux new
-        end
-    end
+    set ZELLIJ_AUTO_EXIT true
+    eval "$(zellij setup --generate-auto-start fish)"
 
     pfetch
     starship init fish | source
