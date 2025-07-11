@@ -1,0 +1,52 @@
+// basic configurations
+theme "catppuccin-mocha"
+default_mode "locked"
+default_layout "terminal"
+pane_frames false
+scroll_buffer_size 20000
+copy_command "wl-copy"
+show_startup_tips false
+show_release_notes false
+
+// keybinds
+keybinds clear-defaults=true {
+  locked {
+    bind "Ctrl a" { SwitchToMode "normal"; }
+  }
+  normal {
+    bind "Esc" { SwitchToMode "locked"; }
+
+    bind "\"" { NewPane  "down"; SwitchToMode "locked"; }
+    bind  "%" { NewPane "right"; SwitchToMode "locked"; }
+    bind  "c" { NewTab; SwitchToMode "locked"; }
+
+    bind "n" { GoToNextTab; SwitchToMode "locked"; }
+    bind "p" { GoToPreviousTab; SwitchToMode "locked"; }
+
+    bind    "Up" { MoveFocus "Up"; SwitchToMode "locked"; }
+    bind  "Left" { MoveFocus "Left"; SwitchToMode "locked"; }
+    bind  "Down" { MoveFocus "Down"; SwitchToMode "locked"; }
+    bind "Right" { MoveFocus "Right"; SwitchToMode "locked"; }
+
+    bind "1" { GoToTab  1; SwitchToMode "locked"; }
+    bind "2" { GoToTab  2; SwitchToMode "locked"; }
+    bind "3" { GoToTab  3; SwitchToMode "locked"; }
+    bind "4" { GoToTab  4; SwitchToMode "locked"; }
+    bind "5" { GoToTab  5; SwitchToMode "locked"; }
+    bind "6" { GoToTab  6; SwitchToMode "locked"; }
+    bind "7" { GoToTab  7; SwitchToMode "locked"; }
+    bind "8" { GoToTab  8; SwitchToMode "locked"; }
+    bind "9" { GoToTab  9; SwitchToMode "locked"; }
+    bind "0" { GoToTab 10; SwitchToMode "locked"; }
+
+    bind "Ctrl d" { Detach; }
+  }
+}
+
+// load plugin files
+load_plugins {}
+
+// plugin configs
+plugins {}
+
+// vi: et:ts=2:sts=2:sw=2
