@@ -1,6 +1,7 @@
 [unstable]
-profile-rustflags = true
+codegen-backend = true
 gc = true
+profile-rustflags = true
 
 [alias]
 in = "inst"
@@ -32,6 +33,7 @@ rustc-wrapper = "sccache"
 
 [profile.dev]
 debug = "line-tables-only"
+codegen-backend = "cranelift"
 
 [profile.release]
 incremental = false
