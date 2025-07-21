@@ -12,5 +12,4 @@ cp ~/.config/starship.toml ./
 cp -r ~/.config/waybar/ ./
 cp ~/.cargo/config.toml ./.cargo/
 cp ~/.cargo/bin/cargo-inst ./.cargo/bin/
-cp -r ~/.config/wezterm/ ./
 cp -r ~/.config/zellij/ ./
