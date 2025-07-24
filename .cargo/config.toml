@@ -12,6 +12,8 @@ ber = "bench --profile release"
 bei = "bench --profile _install"
 blr = "bloat --profile release"
 bli = "bloat --profile _install"
+bd = "build --profile _debug"
+bt = "test build --profile _debug"
 br = "build --profile release"
 bi = "build --profile _install"
 rr = "run --profile release"
@@ -42,6 +44,11 @@ codegen-units = 1
 debug = "line-tables-only"
 strip = false
 lto = true
+
+[profile._debug]
+inherits = "dev"
+debug = 2
+codegen-backend = "llvm"
 
 [profile._install]
 inherits = "release"
