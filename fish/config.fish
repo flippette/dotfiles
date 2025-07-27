@@ -9,6 +9,8 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/coursier/bin
 
+# disable the direnv warning
+set -x DIRENV_WARN_TIMEOUT 0
 
 if status is-interactive
     set ZELLIJ_AUTO_EXIT true
