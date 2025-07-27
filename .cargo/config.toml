@@ -5,7 +5,6 @@ profile-rustflags = true
 
 [alias]
 in = "inst"
-il = "install --list"
 un = "uninstall"
 if = "info -v"
 ber = "bench --profile release"
@@ -21,8 +20,6 @@ ri = "run --profile _install"
 cl = "clean"
 do = "doc --open"
 nt = "nextest run"
-ntr = "nextest run --cargo-profile release"
-nti = "nextest run --cargo-profile _install"
 ntm = "miri nextest run"
 ntl = "nextest list"
 ar = "asm --simplify --profile release"
