@@ -26,3 +26,6 @@ if status is-interactive
     alias du dust
     alias tree erd
 end
+
+# zoxide my beloved
+zoxide init fish | source
