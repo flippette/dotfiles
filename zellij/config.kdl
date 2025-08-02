@@ -38,8 +38,8 @@ keybinds clear-defaults=true {
     // yes these seem backward
     bind "H" { Resize "Increase Left"; }
     bind "L" { Resize "Increase Right"; }
-    bind "J" { Resize "Increase Up"; }
-    bind "K" { Resize "Increase Down"; }
+    bind "J" { Resize "Increase Down"; }
+    bind "K" { Resize "Increase Up"; }
     bind "d"  { Detach; SwitchToMode "locked"; }
   }
 }
