@@ -12,6 +12,9 @@ fish_add_path $HOME/.local/share/coursier/bin
 # disable the direnv warning
 set -x DIRENV_WARN_TIMEOUT 0
 
+# use `difftastic` for `git diff`
+set -x GIT_EXTERNAL_DIFF difft
+
 if status is-interactive
     set ZELLIJ_AUTO_EXIT true
     eval "$(zellij setup --generate-auto-start fish)"
