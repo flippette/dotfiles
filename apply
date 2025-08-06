@@ -6,6 +6,7 @@ cp -r \
   ./fish \
   ./foot \
   ./ghostty \
+  ./gitui \
   ./hypr \
   ./MangoHud \
   ./mpv \
