@@ -1,17 +1,17 @@
 #!/bin/sh
 
-cp -r ~/.config/bat/ ./
-cp -r ~/.config/btop/btop.conf ~/.config/btop/themes/ ./btop/
-cp ~/.config/fish/config.fish ./fish/
-cp -r ~/.config/foot/ ./
-cp -r ~/.config/ghostty/ ./
-cp -r ~/.config/hypr/ ./
-cp -r ~/.config/lazygit/ ./
-cp -r ~/.config/MangoHud/ ./
-cp -r ~/.config/mpv/ ./
-cp -r ~/.config/rustfmt/ ./
-cp ~/.config/starship.toml ./
-cp -r ~/.config/waybar/ ./
-cp ~/.cargo/config.toml ./.cargo/
-cp ~/.cargo/bin/cargo-inst ./.cargo/bin/
-cp -r ~/.config/zellij/ ./
+cp -r "$XDG_CONFIG_HOME"/bat/ ./
+cp -r "$XDG_CONFIG_HOME"/btop/btop.conf "$XDG_CONFIG_HOME"/btop/themes/ ./btop/
+cp "$XDG_CONFIG_HOME"/fish/config.fish ./fish/
+cp -r "$XDG_CONFIG_HOME"/foot/ ./
+cp -r "$XDG_CONFIG_HOME"/ghostty/ ./
+cp -r "$XDG_CONFIG_HOME"/hypr/ ./
+cp -r "$XDG_CONFIG_HOME"/lazygit/ ./
+cp -r "$XDG_CONFIG_HOME"/MangoHud/ ./
+cp -r "$XDG_CONFIG_HOME"/mpv/ ./
+cp -r "$XDG_CONFIG_HOME"/rustfmt/ ./
+cp "$XDG_CONFIG_HOME"/starship.toml ./
+cp -r "$XDG_CONFIG_HOME"/waybar/ ./
+cp "$CARGO_HOME"/config.toml ./cargo/
+cp "$CARGO_HOME"/bin/cargo-inst ./cargo/bin/
+cp -r "$XDG_CONFIG_HOME"/zellij/ ./
