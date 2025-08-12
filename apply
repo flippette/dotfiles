@@ -14,5 +14,5 @@ cp -r \
   ./starship.toml \
   ./waybar \
   ./zellij \
-  ~/.config
-cp -r ./.cargo/* ~/.cargo
+  "$XDG_CONFIG_HOME"
+cp -r ./cargo/* "$CARGO_HOME"
