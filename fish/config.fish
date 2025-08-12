@@ -1,38 +1,38 @@
 set -g fish_greeting
 
 # disable the direnv warning
-set -x DIRENV_WARN_TIMEOUT 0
+set -gx DIRENV_WARN_TIMEOUT 0
 
 # use `difftastic` for `git diff`
-set -x GIT_EXTERNAL_DIFF difft
+set -gx GIT_EXTERNAL_DIFF difft
 
 # set XDG base dirs
-set -x XDG_DATA_HOME $HOME/.local/share
-set -x XDG_CONFIG_HOME $HOME/.config
-set -x XDG_STATE_HOME $HOME/.local/state
-set -x XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_STATE_HOME $HOME/.local/state
+set -gx XDG_CACHE_HOME $HOME/.cache
 
 # gnupg home dirs
-set -x GNUPGHOME $XDG_DATA_HOME/gnupg
+set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
 
 # rust home dirs
-set -x RUSTUP_HOME $XDG_DATA_HOME/rustup
-set -x CARGO_HOME $XDG_DATA_HOME/cargo
+set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
+set -gx CARGO_HOME $XDG_DATA_HOME/cargo
 
 # npm home dirs
-set -x NPM_CONFIG_INIT_MODULE $XDG_CONFIG_HOME/npm/config/npm-init.js
-set -x NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
-set -x NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
+set -gx NPM_CONFIG_INIT_MODULE $XDG_CONFIG_HOME/npm/config/npm-init.js
+set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
+set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
 
 # nix
 source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
-fish_add_path $XDG_STATE_HOME/nix/profile/bin
+fish_add_path -gP $XDG_STATE_HOME/nix/profile/bin
 
 # other paths
-fish_add_path /opt/rocm/bin
-fish_add_path /opt/cuda/bin
-fish_add_path $HOME/.local/bin
-fish_add_path $CARGO_HOME/bin
+fish_add_path -gP /opt/rocm/bin
+fish_add_path -gP /opt/cuda/bin
+fish_add_path -gP $HOME/.local/bin
+fish_add_path -gP $CARGO_HOME/bin
 
 if status is-interactive
     set ZELLIJ_AUTO_EXIT true
@@ -47,6 +47,7 @@ if status is-interactive
     alias cat bat
     alias du dust
     alias tree erd
+
 end
 
 # zoxide my beloved
