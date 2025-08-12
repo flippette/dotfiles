@@ -5,8 +5,8 @@ cp -r ~/.config/btop/btop.conf ~/.config/btop/themes/ ./btop/
 cp ~/.config/fish/config.fish ./fish/
 cp -r ~/.config/foot/ ./
 cp -r ~/.config/ghostty/ ./
-cp -r ~/.config/gitui/ ./
 cp -r ~/.config/hypr/ ./
+cp -r ~/.config/lazygit/ ./
 cp -r ~/.config/MangoHud/ ./
 cp -r ~/.config/mpv/ ./
 cp -r ~/.config/rustfmt/ ./
