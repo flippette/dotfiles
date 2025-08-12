@@ -15,6 +15,12 @@ set -x DIRENV_WARN_TIMEOUT 0
 # use `difftastic` for `git diff`
 set -x GIT_EXTERNAL_DIFF difft
 
+# set XDG base dirs
+set -x XDG_DATA_HOME $HOME/.local/share
+set -x XDG_CONFIG_HOME $HOME/.config
+set -x XDG_STATE_HOME $HOME/.local/state
+set -x XDG_CACHE_HOME $HOME/.cache
+
 if status is-interactive
     set ZELLIJ_AUTO_EXIT true
     eval "$(zellij setup --generate-auto-start fish)"
