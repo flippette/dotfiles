@@ -8,7 +8,7 @@ freetype-load-flags = no-hinting, no-force-autohint, no-autohint
 adjust-underline-thickness = -50%
 adjust-strikethrough-thickness = -50%
 adjust-overline-thickness = -50%
-adjust-box-thickness = -50%
+adjust-box-thickness = -25%
 
 window-decoration = none
 window-padding-x = 0
