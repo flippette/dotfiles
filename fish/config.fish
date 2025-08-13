@@ -47,7 +47,6 @@ if status is-interactive
     alias cat bat
     alias du dust
     alias tree erd
-
 end
 
 # zoxide my beloved
