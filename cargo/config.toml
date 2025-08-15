@@ -31,6 +31,7 @@ si = "size --profile _install"
 rustc-wrapper = "sccache"
 
 [profile.dev]
+incremental = false
 debug = "line-tables-only"
 codegen-backend = "cranelift"
 
