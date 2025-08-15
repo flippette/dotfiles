@@ -17,30 +17,33 @@ keybinds clear-defaults=true {
     bind "Ctrl a" { SwitchToMode "locked"; }
     bind "Ctrl c" { SwitchToMode "locked"; }
     bind "Esc"    { SwitchToMode "locked"; }
-    bind "c"  { NewTab; SwitchToMode "locked"; }
-    bind "n"  { GoToNextTab; SwitchToMode "locked"; }
-    bind "p"  { GoToPreviousTab; SwitchToMode "locked"; }
-    bind "1"  { GoToTab 1; SwitchToMode "locked"; }
-    bind "2"  { GoToTab 2; SwitchToMode "locked"; }
-    bind "3"  { GoToTab 3; SwitchToMode "locked"; }
-    bind "4"  { GoToTab 4; SwitchToMode "locked"; }
-    bind "5"  { GoToTab 5; SwitchToMode "locked"; }
-    bind "6"  { GoToTab 6; SwitchToMode "locked"; }
-    bind "7"  { GoToTab 7; SwitchToMode "locked"; }
-    bind "8"  { GoToTab 8; SwitchToMode "locked"; }
-    bind "9"  { GoToTab 9; SwitchToMode "locked"; }
+
+    bind "c" { NewTab; SwitchToMode "locked"; }
+    bind "n" { GoToNextTab; SwitchToMode "locked"; }
+    bind "p" { GoToPreviousTab; SwitchToMode "locked"; }
+    bind "1" { GoToTab 1; SwitchToMode "locked"; }
+    bind "2" { GoToTab 2; SwitchToMode "locked"; }
+    bind "3" { GoToTab 3; SwitchToMode "locked"; }
+    bind "4" { GoToTab 4; SwitchToMode "locked"; }
+    bind "5" { GoToTab 5; SwitchToMode "locked"; }
+    bind "6" { GoToTab 6; SwitchToMode "locked"; }
+    bind "7" { GoToTab 7; SwitchToMode "locked"; }
+    bind "8" { GoToTab 8; SwitchToMode "locked"; }
+    bind "9" { GoToTab 9; SwitchToMode "locked"; }
+
     bind "\"" { NewPane "Down"; SwitchToMode "locked"; }
     bind "%"  { NewPane "Right"; SwitchToMode "locked"; }
     bind "h"  { MoveFocus "Left"; SwitchToMode "locked"; }
     bind "l"  { MoveFocus "Right"; SwitchToMode "locked"; }
     bind "j"  { MoveFocus "Down"; SwitchToMode "locked"; }
     bind "k"  { MoveFocus "Up"; SwitchToMode "locked"; }
-    // yes these seem backward
+
     bind "H" { Resize "Increase Left"; }
     bind "L" { Resize "Increase Right"; }
     bind "J" { Resize "Increase Down"; }
     bind "K" { Resize "Increase Up"; }
-    bind "d"  { Detach; SwitchToMode "locked"; }
+
+    bind "d" { Detach; SwitchToMode "locked"; }
   }
 }
 
