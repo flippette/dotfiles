@@ -60,7 +60,8 @@ rustflags = ["-Ctarget-cpu=native"]
 [target.'cfg(all())']
 rustflags = ["-Zshare-generics", "-Zthreads=8"]
 
-[target.'cfg(all(target_arch = "x86_64", target_os = "linux"))']
+[target.'cfg(target_os = "linux")']
+linker = "clang"
 rustflags = [
   "-Clink-arg=-fuse-ld=mold",
   "-Clink-arg=-Wl,--compress-debug-sections=zstd",
