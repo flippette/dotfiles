@@ -35,10 +35,6 @@ fish_add_path -gP $HOME/.local/bin
 fish_add_path -gP $CARGO_HOME/bin
 
 if status is-interactive
-    set ZELLIJ_AUTO_EXIT true
-    eval "$(zellij setup --generate-auto-start fish)"
-
-    pfetch
     starship init fish | source
     direnv hook fish | source
 
@@ -47,6 +43,8 @@ if status is-interactive
     alias cat bat
     alias du dust
     alias tree erd
+
+    pfetch
 end
 
 # zoxide my beloved
