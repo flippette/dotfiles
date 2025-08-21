@@ -17,3 +17,5 @@ window-padding-balance = true
 maximize = true
 
 cursor-style-blink = false
+
+shell-integration-features = no-cursor
