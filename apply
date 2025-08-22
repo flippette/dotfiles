@@ -5,9 +5,9 @@ cp -r \
   ./btop \
   ./fish \
   ./ghostty \
-  ./hypr \
   ./lazygit \
   ./MangoHud \
+  ./niri \
   ./mpv \
   ./rustfmt \
   ./starship.toml \

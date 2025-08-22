@@ -1,0 +1,131 @@
+input {
+  mouse {
+    accel-profile "flat"
+  }
+
+  focus-follows-mouse
+}
+
+output "DP-1" {
+  position x=0 y=540
+  variable-refresh-rate
+  focus-at-startup
+}
+
+output "DP-2" {
+  transform "90"
+  position x=-1440 y=0
+}
+
+binds {
+  Mod+Return      { spawn "ghostty";               }
+  Mod+D           { spawn "bemenu-run";            }
+  Mod+Q           { close-window;                  }
+  Mod+Shift+E     { quit;                          }
+  Mod+F           { fullscreen-window;             }
+  Mod+Shift+Space { toggle-window-floating;        }
+  Mod+Shift+Slash { show-hotkey-overlay;           }
+  Mod+Tab         { toggle-overview;               }
+
+  Mod+Shift+Minus { power-off-monitors; }
+  Mod+Shift+Equal { power-on-monitors;  }
+
+  Mod+H { focus-column-left;  }
+  Mod+J { focus-window-or-workspace-down;  }
+  Mod+K { focus-window-or-workspace-up;    }
+  Mod+L { focus-column-right; }
+
+  Mod+Shift+H { move-column-left; }
+  Mod+Shift+L { move-column-right; }
+
+  Mod+1 { focus-workspace  1; }
+  Mod+2 { focus-workspace  2; }
+  Mod+3 { focus-workspace  3; }
+  Mod+4 { focus-workspace  4; }
+  Mod+5 { focus-workspace  5; }
+  Mod+6 { focus-workspace  6; }
+  Mod+7 { focus-workspace  7; }
+  Mod+8 { focus-workspace  8; }
+  Mod+9 { focus-workspace  9; }
+  Mod+0 { focus-workspace 10; }
+
+  Mod+Shift+1 { move-window-to-workspace  1; }
+  Mod+Shift+2 { move-window-to-workspace  2; }
+  Mod+Shift+3 { move-window-to-workspace  3; }
+  Mod+Shift+4 { move-window-to-workspace  4; }
+  Mod+Shift+5 { move-window-to-workspace  5; }
+  Mod+Shift+6 { move-window-to-workspace  6; }
+  Mod+Shift+7 { move-window-to-workspace  7; }
+  Mod+Shift+8 { move-window-to-workspace  8; }
+  Mod+Shift+9 { move-window-to-workspace  9; }
+  Mod+Shift+0 { move-window-to-workspace 10; }
+
+  Mod+P       { screenshot;        }
+  Mod+Shift+P { screenshot-window; }
+}
+
+
+layout {
+  gaps 8
+  center-focused-column "never"
+  always-center-single-column
+
+  focus-ring {
+    width 1
+    active-color   "#cba6f7"
+    inactive-color "#1e1e2e"
+    urgent-color   "#f38ba8"
+  }
+
+  insert-hint {
+    color "#cba6f720"
+  }
+}
+
+spawn-at-startup "waybar"
+spawn-at-startup "dunst"
+spawn-at-startup "udiskie" "-t"
+spawn-at-startup "fcitx5"
+spawn-at-startup "nm-applet"
+spawn-at-startup "blueman-applet"
+spawn-at-startup "noisetorch" "-i"
+spawn-at-startup "sh" "-c" "swaybg -o DP-1 -m fill -i $(xdg-user-dir PICTURES)/wallh2.jpg"
+spawn-at-startup "sh" "-c" "swaybg -o DP-2 -m fill -i $(xdg-user-dir PICTURES)/wallv.jpg"
+
+prefer-no-csd
+
+environment {
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  QT_QPA_PLATFORMTHEME                "qt5ct"
+}
+
+cursor {
+  xcursor-theme "Bibata-Modern-Classic"
+  xcursor-size  24
+}
+
+overview {
+  zoom 0.75
+  backdrop-color "#181926"
+}
+
+hotkey-overlay {
+  // hide-not-bound
+}
+
+window-rule {
+  geometry-corner-radius 4
+  clip-to-geometry       true
+  open-maximized         true
+}
+
+window-rule {
+  match app-id="mpv"
+  open-fullscreen true
+}
+
+gestures {
+  hot-corners {
+    off
+  }
+}
