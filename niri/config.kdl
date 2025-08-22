@@ -23,6 +23,7 @@ binds {
   Mod+Q           { close-window;                  }
   Mod+Shift+E     { quit;                          }
   Mod+F           { fullscreen-window;             }
+  Mod+Space       { maximize-column;               }
   Mod+Shift+Space { toggle-window-floating;        }
   Mod+Shift+Slash { show-hotkey-overlay;           }
   Mod+Tab         { toggle-overview;               }
@@ -116,7 +117,6 @@ hotkey-overlay {
 window-rule {
   geometry-corner-radius 4
   clip-to-geometry       true
-  open-maximized         true
 }
 
 window-rule {
