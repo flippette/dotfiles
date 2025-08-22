@@ -5,8 +5,8 @@
   "height": 32,
 
   "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/window"
+    "niri/workspaces",
+    "niri/window"
   ],
   "modules-right": [
     "wireplumber",

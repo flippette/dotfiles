@@ -3,9 +3,9 @@
 cp -r \
   "$XDG_CONFIG_HOME/bat/" \
   "$XDG_CONFIG_HOME/ghostty/" \
-  "$XDG_CONFIG_HOME/hypr/" \
   "$XDG_CONFIG_HOME/lazygit/" \
   "$XDG_CONFIG_HOME/MangoHud/" \
+  "$XDG_CONFIG_HOME/niri/" \
   "$XDG_CONFIG_HOME/mpv/" \
   "$XDG_CONFIG_HOME/rustfmt/" \
   "$XDG_CONFIG_HOME/starship.toml" \
