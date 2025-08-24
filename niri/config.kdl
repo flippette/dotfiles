@@ -92,12 +92,17 @@ spawn-at-startup "blueman-applet"
 spawn-at-startup "noisetorch" "-i"
 spawn-at-startup "sh" "-c" "swaybg -o DP-1 -m fill -i $(xdg-user-dir PICTURES)/wallh2.jpg"
 spawn-at-startup "sh" "-c" "swaybg -o DP-2 -m fill -i $(xdg-user-dir PICTURES)/wallv.jpg"
+spawn-at-startup "xwayland-satellite"
 
 prefer-no-csd
 
 environment {
   QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
   QT_QPA_PLATFORMTHEME                "qt5ct"
+
+  // steam still uses X11
+  // valve pls fix
+  DISPLAY ":0"
 }
 
 cursor {
