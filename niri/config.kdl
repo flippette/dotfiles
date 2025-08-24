@@ -18,15 +18,17 @@ output "DP-2" {
 }
 
 binds {
-  Mod+Return      { spawn "ghostty";               }
-  Mod+D           { spawn "bemenu-run";            }
-  Mod+Q           { close-window;                  }
-  Mod+Shift+E     { quit;                          }
-  Mod+F           { fullscreen-window;             }
-  Mod+Space       { maximize-column;               }
-  Mod+Shift+Space { toggle-window-floating;        }
-  Mod+Shift+Slash { show-hotkey-overlay;           }
-  Mod+Tab         { toggle-overview;               }
+  Mod+Return      { spawn "ghostty";        }
+  Mod+D           { spawn "bemenu-run";     }
+  Mod+Q           { close-window;           }
+  Mod+Shift+E     { quit;                   }
+  Mod+F           { fullscreen-window;      }
+  Mod+Space       { maximize-column;        }
+  Mod+Shift+Space { toggle-window-floating; }
+  Mod+Shift+Slash { show-hotkey-overlay;    }
+  Mod+Tab         { toggle-overview;        }
+  Mod+N           { focus-monitor-previous; }
+  Mod+M           { focus-monitor-next;     }
 
   Mod+Shift+Minus { power-off-monitors; }
   Mod+Shift+Equal { power-on-monitors;  }
