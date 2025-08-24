@@ -31,10 +31,10 @@ binds {
   Mod+Shift+Minus { power-off-monitors; }
   Mod+Shift+Equal { power-on-monitors;  }
 
-  Mod+H { focus-column-left;  }
-  Mod+J { focus-window-or-workspace-down;  }
-  Mod+K { focus-window-or-workspace-up;    }
-  Mod+L { focus-column-right; }
+  Mod+H { focus-column-left;              }
+  Mod+J { focus-window-or-workspace-down; }
+  Mod+K { focus-window-or-workspace-up;   }
+  Mod+L { focus-column-right;             }
 
   Mod+Shift+H { move-column-left;              }
   Mod+Shift+J { move-column-to-workspace-down; }
