@@ -36,8 +36,10 @@ binds {
   Mod+K { focus-window-or-workspace-up;    }
   Mod+L { focus-column-right; }
 
-  Mod+Shift+H { move-column-left; }
-  Mod+Shift+L { move-column-right; }
+  Mod+Shift+H { move-column-left;              }
+  Mod+Shift+J { move-column-to-workspace-down; }
+  Mod+Shift+L { move-column-right;             }
+  Mod+Shift+K { move-column-to-workspace-up;   }
 
   Mod+1 { focus-workspace  1; }
   Mod+2 { focus-workspace  2; }
