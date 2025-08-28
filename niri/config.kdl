@@ -27,8 +27,6 @@ binds {
   Mod+Shift+Space { toggle-window-floating; }
   Mod+Shift+Slash { show-hotkey-overlay;    }
   Mod+Tab         { toggle-overview;        }
-  Mod+N           { focus-monitor-previous; }
-  Mod+M           { focus-monitor-next;     }
 
   Mod+Shift+Minus { power-off-monitors; }
   Mod+Shift+Equal { power-on-monitors;  }
@@ -37,11 +35,15 @@ binds {
   Mod+J { focus-window-or-workspace-down; }
   Mod+K { focus-window-or-workspace-up;   }
   Mod+L { focus-column-right;             }
+  Mod+N           { focus-monitor-previous; }
+  Mod+M           { focus-monitor-next;     }
 
   Mod+Shift+H { move-column-left;              }
   Mod+Shift+J { move-column-to-workspace-down; }
   Mod+Shift+L { move-column-right;             }
   Mod+Shift+K { move-column-to-workspace-up;   }
+  Mod+Shift+N { move-column-to-monitor-left;   }
+  Mod+Shift+M { move-column-to-monitor-right;  }
 
   Mod+1 { focus-workspace  1; }
   Mod+2 { focus-workspace  2; }
