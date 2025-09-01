@@ -35,8 +35,8 @@ binds {
   Mod+J { focus-window-or-workspace-down; }
   Mod+K { focus-window-or-workspace-up;   }
   Mod+L { focus-column-right;             }
-  Mod+N           { focus-monitor-previous; }
-  Mod+M           { focus-monitor-next;     }
+  Mod+N { focus-monitor-previous; }
+  Mod+M { focus-monitor-next;     }
 
   Mod+Shift+H { move-column-left;              }
   Mod+Shift+J { move-column-to-workspace-down; }
