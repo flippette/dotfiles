@@ -57,7 +57,7 @@ codegen-backend = "llvm"
 inherits = "release"
 rustflags = ["-Ctarget-cpu=native"]
 
-[target.'cfg(all())']
+[target.'cfg(true)']
 rustflags = ["-Zshare-generics", "-Zthreads=8"]
 
 [target.'cfg(target_os = "linux")']
