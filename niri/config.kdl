@@ -96,7 +96,7 @@ spawn-sh-at-startup "fcitx5"
 spawn-sh-at-startup "nm-applet"
 spawn-sh-at-startup "blueman-applet"
 spawn-sh-at-startup "noisetorch -i"
-spawn-sh-at-startup "swaybg -o DP-1 -m fill -i $(xdg-user-dir PICTURES)/wallh2.jpg"
+spawn-sh-at-startup "swaybg -o DP-1 -m fill -i $(xdg-user-dir PICTURES)/wallh-2.png"
 spawn-sh-at-startup "swaybg -o DP-2 -m fill -i $(xdg-user-dir PICTURES)/wallv.jpg"
 
 prefer-no-csd
