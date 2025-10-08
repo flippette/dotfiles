@@ -20,7 +20,7 @@ layout {
 
       datetime          "#[fg=#cdd6f4,bg=#181825] {format}"
       datetime_format   "%A, %d %b %H:%M"
-      datetime_timezone "Asia/Ho_Chi_Minh"
+      datetime_timezone "Europe/Helsinki"
     }
   }
 }
