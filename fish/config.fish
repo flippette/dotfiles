@@ -3,9 +3,6 @@ set -g fish_greeting
 # disable the direnv warning
 set -gx DIRENV_WARN_TIMEOUT 0
 
-# use `difftastic` for `git diff`
-set -gx GIT_EXTERNAL_DIFF difft
-
 # set XDG base dirs
 set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx XDG_CONFIG_HOME $HOME/.config

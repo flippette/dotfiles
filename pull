@@ -3,6 +3,7 @@
 cp -r \
   "$XDG_CONFIG_HOME/bat/" \
   "$XDG_CONFIG_HOME/ghostty/" \
+  "$XDG_CONFIG_HOME/git/" \
   "$XDG_CONFIG_HOME/lazygit/" \
   "$XDG_CONFIG_HOME/MangoHud/" \
   "$XDG_CONFIG_HOME/niri/" \

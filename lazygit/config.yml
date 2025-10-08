@@ -1,4 +1,8 @@
-# catppuccin mocha below
+git:
+  paging:
+    useExternalDiffGitConfig: true
+
+# catppuccin mocha
 
 theme:
   activeBorderColor:
