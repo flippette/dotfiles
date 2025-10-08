@@ -1,0 +1,14 @@
+[user]
+	name = flippette
+	email = me@flippo.cc
+	signingkey = F2B9B6F956656EDB601B5507414A7B0A5AD5BF8C
+[core]
+	autocrlf = false
+[color]
+	ui = true
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[diff]
+	external = difft --width=110 --tab-width=2 --color=always

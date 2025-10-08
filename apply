@@ -5,6 +5,7 @@ cp -r \
   ./btop \
   ./fish \
   ./ghostty \
+  ./git \
   ./lazygit \
   ./MangoHud \
   ./niri \
