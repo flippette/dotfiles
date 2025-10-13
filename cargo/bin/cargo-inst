@@ -4,6 +4,6 @@
 
 cargo install \
   --profile _install \
-  --target "$(rustc --print host-tuple)" \
+  --target host-tuple \
   -Zbuild-std=std,panic_abort \
   "$@"
