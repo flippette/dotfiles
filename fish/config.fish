@@ -16,6 +16,9 @@ set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
 set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
 
+# haskell home dirs
+set -gx GHCUP_USE_XDG_DIRS 1
+
 # npm home dirs
 set -gx NPM_CONFIG_INIT_MODULE $XDG_CONFIG_HOME/npm/config/npm-init.js
 set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
