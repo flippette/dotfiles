@@ -97,7 +97,7 @@ spawn-sh-at-startup "nm-applet"
 spawn-sh-at-startup "blueman-applet"
 spawn-sh-at-startup "noisetorch -i"
 spawn-sh-at-startup "mpvpaper DP-1 -o loop $(xdg-user-dir PICTURES)/suki.avif"
-spawn-sh-at-startup "mpvpaper DP-2 -o loop $(xdg-user-dir PICTURES)/wallv.jpg"
+spawn-sh-at-startup "mpvpaper DP-2 -o loop $(xdg-user-dir PICTURES)/wallv.png"
 
 prefer-no-csd
 
