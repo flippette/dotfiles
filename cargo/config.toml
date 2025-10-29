@@ -60,7 +60,7 @@ inherits = "release"
 rustflags = ["-Ctarget-cpu=native"]
 
 [target.'cfg(true)']
-rustflags = ["-Zshare-generics", "-Zthreads=8"]
+rustflags = ["-Zshare-generics", "-Zthreads=16"]
 
 [target.'cfg(unix)']
 rustflags = ["-Clink-arg=-gz=zstd"]
