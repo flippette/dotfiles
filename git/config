@@ -10,5 +10,3 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
-[diff]
-	external = difft --width=110 --tab-width=2 --color=always
