@@ -19,7 +19,11 @@ cp -r \
   "$XDG_CONFIG_HOME/btop/themes/" \
   ./btop/
 
-cp "$XDG_CONFIG_HOME/fish/config.fish" ./fish/
+cp -r \
+  "$XDG_CONFIG_HOME/fish/config.fish" \
+  "$XDG_CONFIG_HOME/fish/conf.d/" \
+  "$XDG_CONFIG_HOME/fish/functions/" \
+  ./fish/
 
 cp "$CARGO_HOME/config.toml" ./cargo/
 cp "$CARGO_HOME/bin/cargo-inst" ./cargo/bin/
