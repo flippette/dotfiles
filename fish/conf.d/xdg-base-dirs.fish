@@ -1,0 +1,25 @@
+# set XDG base dirs
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_STATE_HOME $HOME/.local/state
+set -gx XDG_CACHE_HOME $HOME/.cache
+
+# gnupg home dirs
+set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
+
+# rust home dirs
+set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
+set -gx CARGO_HOME $XDG_DATA_HOME/cargo
+
+# haskell home dirs
+set -gx GHCUP_USE_XDG_DIRS 1
+set -gx STACK_XDG 1
+
+# npm home dirs
+set -gx NPM_CONFIG_INIT_MODULE $XDG_CONFIG_HOME/npm/config/npm-init.js
+set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
+set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
+
+# nix
+source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
+fish_add_path -gP $XDG_STATE_HOME/nix/profile/bin
