@@ -7,7 +7,6 @@ set -gx DIRENV_WARN_TIMEOUT 0
 fish_add_path -gP /opt/rocm/bin
 fish_add_path -gP /opt/cuda/bin
 fish_add_path -gP $HOME/.local/bin
-fish_add_path -gP $CARGO_HOME/bin
 
 if status is-interactive
     starship init fish | source
