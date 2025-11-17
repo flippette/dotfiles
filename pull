@@ -25,5 +25,8 @@ cp -r \
   "$XDG_CONFIG_HOME/fish/functions/" \
   ./fish/
 
-cp "$CARGO_HOME/config.toml" ./cargo/
+cp \
+  "$CARGO_HOME/config.toml" \
+  "$CARGO_HOME/env.fish" \
+  ./cargo/
 cp "$CARGO_HOME/bin/cargo-inst" ./cargo/bin/
