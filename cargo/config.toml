@@ -35,7 +35,7 @@ rb = "remark build"
 vg = "valgrind"
 
 [build]
-rustc-wrapper = "sccache"
+build-dir = "{cargo-cache-home}/build"
 
 [profile.dev]
 incremental = false
@@ -64,4 +64,3 @@ rustflags = ["-Zshare-generics", "-Zthreads=16"]
 
 [target.'cfg(unix)']
 rustflags = ["-Clink-arg=-gz=zstd"]
-
