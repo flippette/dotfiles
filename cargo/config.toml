@@ -1,5 +1,4 @@
 [unstable]
-codegen-backend = true
 gc = true
 profile-rustflags = true
 
@@ -40,7 +39,6 @@ build-dir = "{cargo-cache-home}/build"
 [profile.dev]
 incremental = false
 debug = "line-tables-only"
-codegen-backend = "cranelift"
 
 [profile.release]
 incremental = false
@@ -53,7 +51,6 @@ lto = true
 [profile._debug]
 inherits = "dev"
 debug = 2
-codegen-backend = "llvm"
 
 [profile._install]
 inherits = "release"
