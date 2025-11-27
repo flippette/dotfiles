@@ -37,7 +37,6 @@ vg = "valgrind"
 build-dir = "{cargo-cache-home}/build"
 
 [profile.dev]
-incremental = false
 debug = "line-tables-only"
 
 [profile.release]
