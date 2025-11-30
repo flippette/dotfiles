@@ -18,15 +18,15 @@ output "DP-2" {
 }
 
 binds {
-  Mod+Return      { spawn "ghostty";        }
-  Mod+D           { spawn "bemenu-run";     }
-  Mod+Q           { close-window;           }
-  Mod+Shift+E     { quit;                   }
-  Mod+F           { fullscreen-window;      }
-  Mod+Space       { maximize-column;        }
-  Mod+Shift+Space { toggle-window-floating; }
-  Mod+Shift+Slash { show-hotkey-overlay;    }
-  Mod+Tab         { toggle-overview;        }
+  Mod+Return      { spawn "ghostty";            }
+  Mod+D           { spawn "bemenu-run";         }
+  Mod+Q           { close-window;               }
+  Mod+Shift+E     { quit;                       }
+  Mod+F           { fullscreen-window;          }
+  Mod+Space       { switch-preset-column-width; }
+  Mod+Shift+Space { toggle-window-floating;     }
+  Mod+Shift+Slash { show-hotkey-overlay;        }
+  Mod+Tab         { toggle-overview;            }
 
   Mod+Shift+Minus { power-off-monitors; }
   Mod+Shift+Equal { power-on-monitors;  }
@@ -77,6 +77,12 @@ layout {
   center-focused-column "never"
   always-center-single-column
 
+  default-column-width { proportion 1.0; }
+  preset-column-widths {
+    proportion 0.5;
+    proportion 1.0;
+  }
+
   focus-ring {
     width 2
     active-color   "#cba6f7"
@@ -121,8 +127,9 @@ hotkey-overlay {
 }
 
 window-rule {
-  geometry-corner-radius 4
-  clip-to-geometry       true
+  geometry-corner-radius  4
+  clip-to-geometry        true
+  open-maximized-to-edges false
 }
 
 window-rule {
