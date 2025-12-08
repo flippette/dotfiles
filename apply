@@ -3,6 +3,7 @@
 cp -r \
   ./bat \
   ./btop \
+  ./direnv \
   ./fish \
   ./ghostty \
   ./git \
