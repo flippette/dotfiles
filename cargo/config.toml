@@ -34,7 +34,7 @@ rb = "remark build"
 vg = "valgrind"
 
 [build]
-build-dir = "{cargo-cache-home}/build"
+# build-dir = "{cargo-cache-home}/build"
 
 [profile.dev]
 debug = "line-tables-only"
