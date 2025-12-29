@@ -20,6 +20,7 @@ output "DP-2" {
 binds {
   Mod+Return      { spawn "ghostty";            }
   Mod+D           { spawn "bemenu-run";         }
+  Mod+W           { spawn "zen-browser";        }
   Mod+Q           { close-window;               }
   Mod+Shift+E     { quit;                       }
   Mod+F           { fullscreen-window;          }
