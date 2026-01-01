@@ -1,14 +1,18 @@
 [user]
 	name = flippette
 	email = me@flippo.cc
-	signingkey = F2B9B6F956656EDB601B5507414A7B0A5AD5BF8C
+	signingKey = ~/.ssh/git.sign.id_ed25519_sk.pub
 [core]
 	autocrlf = false
 [color]
 	ui = true
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
 [init]
 	defaultBranch = main
-[commit]
-	gpgsign = true
 [push]
 	autoSetupRemote = true
+[tag]
+	forceSignAnnotated = true
